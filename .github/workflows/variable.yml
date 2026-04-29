@@ -1,0 +1,16 @@
+name: Variable Demo
+
+on:
+  push:
+
+env:
+  DAY_OF_WEEK: Monday
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    env:
+      GREETING: Hello
+    steps:
+      - name: Print message
+        run: echo "$GREETING Kalpana. Today is $DAY_OF_WEEK!"
