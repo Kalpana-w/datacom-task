@@ -1,5 +1,32 @@
-# datacom-task
+╔══════════════════════════════════════════════════════╗
+║              🚀 KALPANA PORTFOLIO CI/CD             ║
+╚══════════════════════════════════════════════════════╝
 
-hi
-This is kalpana
-1st line
+                 GitHub Actions
+                       │
+              ┌────────┴────────┐
+              │                 │
+          🔵 CI Pipeline     🟣 CD Pipeline
+              │                 │
+        Pull Request         Push → main
+              │                 │
+              ▼                 ▼
+        ┌───────────┐      ┌────────────┐
+        │ Checkout  │      │  Checkout  │
+        └─────┬─────┘      └─────┬──────┘
+              │                   │
+              ▼                   ▼
+        ┌───────────┐      ┌────────────┐
+        │   Test    │      │   Build    │
+        └─────┬─────┘      └─────┬──────┘
+              │                   │
+              ▼                   ▼
+        ✅ CI Passed        🚀 Deploy
+                                  │
+                                  ▼
+                         ┌────────────────┐
+                         │ GitHub Pages   │
+                         └───────┬────────┘
+                                 │
+                                 ▼
+                         🌐 MY PORTFOLIO
